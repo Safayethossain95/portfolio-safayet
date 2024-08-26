@@ -1,0 +1,12 @@
+@import "../../sass/sassStyles/variables";
+.herosection{
+    height: 80vh;
+    background-color: $dark;
+    width: 100%;
+    h1{
+        color:#fff;
+    }
+    .herorow{
+        height: 80vh;
+    }
+}
