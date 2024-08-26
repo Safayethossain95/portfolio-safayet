@@ -1,12 +1,54 @@
 @import "../../sass/sassStyles/variables";
-.herosection{
+.herosection {
+  height: 80vh;
+  background-color: $dark;
+  width: 100%;
+  h1 {
+  }
+  .herorow {
     height: 80vh;
-    background-color: $dark;
-    width: 100%;
-    h1{
-        color:#fff;
+  }
+  .circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 30%;
+    transform: rotate(30deg);
+    overflow: hidden;
+    margin: 0 auto;
+    img {
+      width: 300px;
+      height: 300px;
+      transform: rotate(-30deg);
     }
-    .herorow{
-        height: 80vh;
+  }
+  .btncontortion{
+    
+    
+    // overflow: hidden;
+  }
+  .herobutton {
+    transform: rotate(-10deg);
+    
+    padding: 20px 40px;
+    background-color: #3F8E00;
+    border: 1px solid #62BA1B;
+    box-shadow: 0px 0px 30px 0px rgba(64, 142, 0, 0.76);
+    margin-top: 30px;
+    animation: moving 6s infinite;
+    color:#fff;
+  }
+  @keyframes moving{
+    0%{
+        box-shadow: 0px 0px 30px 0px rgba(64, 142, 0, 0.76);
+        transform: scale(1);
     }
+    50%{
+        box-shadow: 0px 0px 0px 0px rgba(64, 142, 0, 0.76);
+        transform: scale(1.06);
+    }
+    100%{
+        box-shadow: 0px 0px 30px 0px rgba(64, 142, 0, 0.76);
+        transform: scale(1);
+    }
+  }
 }
